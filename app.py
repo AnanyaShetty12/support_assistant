@@ -12,6 +12,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 from dotenv import load_dotenv
 import openai
 
+st.set_page_config(page_title="Support Assistant – FAQ Resolver", page_icon="💬")
+
 # Load .env if present
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -158,8 +160,8 @@ def save_feedback(ticket_or_query, rating, comment):
         df_fb.to_csv(FEEDBACK_PATH, index=False)
 
 # --- Streamlit UI ---
-st.title("🤝 Support Assistant — FAQ Resolver & Escalation")
-st.write("Ask a question and get the best FAQ answer. Escalate to human support if needed.")
+st.title("💬 Support Assistant – FAQ Resolver & Escalation")
+st.write("Ask your query and receive instant support")
 
 # Load model and embeddings
 with st.spinner("Loading knowledge base and model..."):
@@ -228,3 +230,12 @@ if st.button("Get Answer"):
             if st.button("Escalate now"):
                 ticket_id = write_ticket(user_name, user_email, query, [r['question'] for r in results])
                 st.warning(f"Escalated — ticket created (ID: {ticket_id}). Support will contact you.")
+
+
+            st.markdown("""
+<hr>
+<center>
+📌 Support Assistant – FAQ Resolver & Escalation<br>
+Developed using Streamlit & AI
+</center>
+""", unsafe_allow_html=True)
