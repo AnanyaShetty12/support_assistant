@@ -1,0 +1,7 @@
+id,question,answer,category
+1,How do I reset my password?,To reset your password go to Settings → Reset Password and follow the instructions. If you do not receive an email check your spam folder.,Account
+2,What is your refund policy?,We offer refunds within 30 days of purchase. Please contact support with your order id.,Billing
+3,How do I change my subscription plan?,Go to Billing → Manage Subscription and choose a plan. Changes apply from next billing cycle.,Billing
+4,How do I update my profile information?,Visit Profile → Edit to update your details and save the changes.,Account
+5,My app is crashing what should I do?,Please try reinstalling the app and ensure you have the latest version. If the issue continues escalate to support.,Technical
+
