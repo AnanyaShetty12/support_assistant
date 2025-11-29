@@ -23,7 +23,6 @@ Frontend              | Streamlit
 Backend               | Python
 Embedding Model       | SentenceTransformer
 Similarity Algorithm  | Cosine Similarity
-Dataset               | CSV file of FAQs
 Deployment            | Streamlit Cloud + GitHub
 
 Setup & Run Instructions (Local Machine)
